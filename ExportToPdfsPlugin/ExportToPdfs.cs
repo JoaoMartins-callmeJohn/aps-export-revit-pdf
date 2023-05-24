@@ -110,9 +110,9 @@ namespace ExportToPdfsApp
 
                 // Note: Setting the maximum number of views to be exported as 5 for demonstration purpose.
                 // Remove or edit here in your production application
-                const int Max_views = 5;
+                //const int Max_views = 5;
                 IList<ElementId> viewIds = new List<ElementId>();
-                for(int i = 0; i < views.Count && i < Max_views; ++i)  // To Do: edit or remove max_views as required.
+                for(int i = 0; i < views.Count; ++i) 
                 {
                     Console.WriteLine(views[i].Name + @", view type is: " + views[i].ViewType.ToString());
                     viewIds.Add(views[i].Id);
